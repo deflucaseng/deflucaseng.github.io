@@ -750,47 +750,8 @@ input, select, textarea {
 
 		.row > .col-4 {
 			width: 33.33333%;
-			transition: width 5s ease; /* Adjusted transition duration */
-			/* background-color: black; Added black background color */
 		}
 
-		.row > .col-4:hover {
-			transform: translateY(-10px) scale(1.50);
-			transition: transform 1s ease; /* Adjusted transition duration */
-		}
-
-		.row > .col-4:hover .icon.major {
-			opacity: 0; /* Makes the icon fully transparent */
-			transition: opacity 1s ease; /* Smooth transition for the opacity change */
-		}
-		.row > .col-4:not(:hover) .icon.major {
-			opacity: 100; /* Makes the icon fully transparent */
-			transition: opacity 1s ease; /* Smooth transition for the opacity change */
-		}
-		
-
-		.row > .col-4:not(:hover) {
-			transform: translateY(0) scale(1);
-			transition: transform 1s ease; /* Added transition for shrinking */
-		}
-
-		.row > .col-4 h3, .col-4 p {
-			transition: transform 1s ease;
-		}
-
-		.row > .col-4:hover h3{
-			transform: translateY(-80px); /* Adjust this value as needed */
-		}
-		.row > .col-4:hover p {
-			transform: translateY(-80px); /* Adjust this value as needed */
-			transition: transform 1s ease, opacity 1s ease; /* Added transition for transform and opacity */
-			opacity: 0; /* Set opacity to 1 */
-		}
-		.row > .col-4:not(:hover) p {
-			transition: transform 1s ease, opacity 1s ease; /* Added transition for transform and opacity */
-			opacity: 1; /* Set opacity to 1 */
-		}
-		
 		.row > .off-4 {
 			margin-left: 33.33333%;
 		}
@@ -2504,7 +2465,7 @@ input, select, textarea {
 			}
 
 			.icon.alt:before {
-				color: #000000 !important;
+				color: #1c1d26 !important;
 				text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
 			}
 
