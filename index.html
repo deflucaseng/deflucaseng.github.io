@@ -41,10 +41,9 @@
 							<p><strong>Hi! My name is Lucas.</strong> 			I'm a Senior at NYU Tandon School of Engineering, studying Computer Science and Math. 
 								I am from Summit NJ, and in my spare time I like to cook, and lately I have been getting into Muay Thai (Thai kick-boxing). 
 								I want to give a quick shoutout and thank you to Dr. Peter Depasquale for properly introducing me to Computer Science, and 
-								for helping me along this path.<br>
-								I currently work as a Computer Science Teaching Assistant, helping with the python course at NYU Tandon. </p>
+								for helping me along this path.<br></p>
 							<span class="image main"><img src="images/logos/pepsipic.png" alt="" /></span>
-							<p style="width: 50%; display: block; margin: auto;">Might be an animal enthusiast</p>
+							<p style="width: 50%; display: block; margin: auto;"><strong>Might be an animal enthusiast</strong></p>
 						</div>
 					</section>
 
@@ -67,6 +66,50 @@
 								<li class="icon solid fa-map-marker-alt">Embedded Systems</li>
 								<li class="icon solid fa-code">Machine Learning/LLM</li>
 							</ul>
+						</div>
+					</section>
+					<!-- Section -->
+					<section>
+						<header>
+							<h2>experience</h2>
+						
+						</header>
+						
+						<div class="content">
+
+
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+	<th>Experience</th>
+	<th>Description</th>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>AI/ML Research Intern (HashedTokens)</td>
+	<td>Worked on implementing feature importance algorithms to enhance model interpretability. <br> Designed and built debugging tools to identify and resolve issues in complex neural architectures
+	</td>
+</tr>
+<tr>
+	<td>Head Computer Science Teaching Assistant (NYU)</td>
+	<td>Oversee Python instruction for a class of 140 students, including helping to develop the curriculum, as well as coordinate Office Hours and Labs <br> Conducted administrative work relating to 
+	conducting interviews and the hiring of personnel for the NYU Tandon Computer Science department</td>
+
+</tr>
+<tr>
+	<td>Computer Science Teaching Assistant (NYU)</td>
+	<td>Facilitate undergraduate lab sessions, providing instructional support and clarifying programming concepts, and conduct office hours to resolve diverse programming queries </td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+
 						</div>
 					</section>
 					<section>
@@ -98,42 +141,20 @@
 							<h2>My projects</h2>
 						</header>
 						<div class="content">
-							<p><strong>I have been working on projects</strong> in the fields of <strong>full stack web development</strong>, 
-							<strong>embedded systems</strong>, <strong>Linux Kernel development, </strong> as well as <strong>High Frequency Trading</strong>. </p>
+							<p><strong>I have been working on projects</strong> in the fields of <strong>Machine Learning</strong>, <strong>Full Stack Web Development</strong>, </strong> as well as <strong>Build Systems</strong>. </p>
 
 							<!-- Section -->
 								<section>
 									<header>
-										<h2>VSCode / Discord interface</h2>
+										<h2>ShadowDash Compiled Build System</h2>
 									
 									</header>
 									
 									<div class="content">
 
-									<p>The project involves developing a Discord bot that reads and displays messages in VSCode, designed to resemble GitHub Copilot but tailored specifically for Discord interactions. This requires using Node.js for the bot, leveraging the VSCode API for interface adjustments, and employing real-time communication technologies like WebSockets for message updates. The implementation is being done in TypeScript or JavaScript, with the project managed through GitHub.</p>
-										<pre><code>
-function DiscordInterface() {
-	connectToServer()
-	while (client.isConnected()) {
-		if (newMessagesAvailable()) {
-			message = receiveMessage()
-			displayMessage(message)
-		}
-		
-		if (userHasInput()) {
-			input = getUserInput()
-			sendMessage(input)
-		}
+									<p>Developed an innovative build system with pseudo C/C++ syntax, enabling direct compilation rather than parsing <br>
+									Engineered a ninja-like tool that leverages familiar C/C++ constructs for improved performance and developer experience</p>
 
-		if (connectionLost()) {
-			reconnect()
-		}
-		
-		updateUI()
-	}
-	disconnect()
-}
-</code></pre>
 <div class="table-wrapper">
 	<table>
 		<thead>
@@ -145,30 +166,11 @@ function DiscordInterface() {
 		</thead>
 		<tbody>
 			<tr>
-				<td>Node.JS</td>
-				<td>Used because of event driven architecture</td>
+				<td>C/C++</td>
+				<td>Used for optimized low level programming</td>
 
 			</tr>
-			<tr>
-				<td>WebSockets</td>
-				<td>Allows for persistent connection between web broswers and servers</td>
 
-			</tr>
-			<tr>
-				<td>VSCode Extension API</td>
-				<td>Required for development in VSCode. </td>
-
-			</tr>
-			<tr>
-				<td>Python</td>
-				<td>Used for backend communication with SQL database</td>
-
-			</tr>
-			<tr>
-				<td>SQL</td>
-				<td>Used as a cache for the most recent messages and related metadata</td>
-
-			</tr>
 		</tbody>
 
 	</table>
@@ -181,35 +183,14 @@ function DiscordInterface() {
 							<!-- Section -->
 								<section>
 									<header>
-										<h2>Forex Arbitrage Bot via AWS (In Progress)</h2>
+										<h2>Neural Machine Translation Model: English to Spanish</h2>
 
 									</header>
 
 									<div class="content">
-										<p>Developing a forex arbitrage trading system using C, designed to identify and exploit price discrepancies between different currency markets.
-											It is hosted on AWS, and will interact with various forex trading platforms through their APIs to execute trades automatically.</p>												
-										<pre><code>
-function initializeBot() {
-	setupAWSLambda()
-	setupDynamoDB()
-	setupSNS()
-	connectToForexAPIs()
-}
+										<p>Developed a seq2seq BiLSTM model with attention for English-Spanish translation, achieving 75% accuracy bu training on 2 million lines of scraped UN proceedings <br>
+										Implemented data preprocessing, model architecture design, and performance optimization for consumer-grade hardware</p>												
 
-function mainLoop() {
-	while (true) {
-		rates = fetchExchangeRates()
-		graph = buildCurrencyGraph(rates)
-		opportunities = detectArbitrage(graph)
-		if (opportunities.exists()) {
-			results = executeArbitrageTrades(opportunities)
-			logTransactions(results)
-			sendNotifications(results)
-		}
-		sleep(LOOP_INTERVAL) // Wait before the next cycle
-	}
-}
-											</code></pre>
 											<div class="table-wrapper">
 												<table>
 													<thead>
@@ -221,13 +202,13 @@ function mainLoop() {
 													</thead>
 													<tbody>
 														<tr>
-															<td>C</td>
-															<td>Allows for low latency/high throughput execution</td>
+															<td>Tensorflow</td>
+															<td>Used Tensors to store data for processing/weights</td>
 											
 														</tr>
 														<tr>
-															<td>AWS</td>
-															<td>Used for hosting. Different locations improve latency</td>
+															<td>NumPy</td>
+															<td>Used for data processing</td>
 											
 														</tr>
 
@@ -240,23 +221,7 @@ function mainLoop() {
 								</section>
 
 							<!-- Section -->
-								<section>
-									<header>
-										<h2>Tuned Linux Kernel for Machine Learning</h2>
 
-									</header>
-									<div class="content">
-										<span class="image main" style="width: 30%; display: block; margin: auto;"><img src="images/logos/Tux.svg.png" alt="" /></span>
-
-										<p><br>
-											Focusing on enhancing the Linux kernel to optimize performance for machine learning applications. 
-											This involves a meticulous process of customizing the kernel to handle large-scale data processing and intensive computational tasks more efficiently. 
-											Key aspects of this project include: Adjusting the kernel to manage CPU and memory resources better, minimizing system latency,
-											and Fine-tuning the kernel to better interact with GPUs.
-										</p>
-
-									</div>
-								</section>
 								<section>
 									<header>
 										<h2>NYU Databases Project</h2>
